@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembelian Ninja</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+</head>
+<body>
+    
+    <section class="container">
+        <header>Form Hobi</header>
+        <form action="form.php" method="post" class="form" id="formInput" onsubmit="return validateForm()">
+            <div class="input-box">
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email" required />
+                <label for="umur">umur :</label>
+                <input type="number" name="umur" id="umur" required />
+                <label for="username">Nama :</label>
+                <input type="text" name="nama" id="nama" required /><br />
+                <label for="ninja">Hobi anda :</label>
+                <input type="text" name="hobi" id="hobi" required />
+                <label for="tgl">Tanggal pengisian :</label>
+                <input type="date" name="tgl" id="tgl" required />
+            </div>
+            <div class="input-box">
+                <input type="submit" value="Submit" />
+                <input type="reset" value="Reset" onclick="resetForm()" />
+            </div>
+        </form>
+        <div id="output"></div>
+    </section>
+</body>
+</html>
